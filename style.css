@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #777;
+}
+
+
+
+#left-image {
+  background: url("./Images/Dot\ Map.png");
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  opacity: 0.2;
+}
+#right-image {
+  background: url("./Images/sky-3.jpg");
+  width: 58%;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  /* clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 67%, 100% 100%, 45% 100%, 45% 100%, 62% 100%); */
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 67%, 100% 100%, 45% 100%, 45% 100%, 45% 100%);
+}
+
+.main {
+  padding: 30px 70px;
+  z-index: 200000;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  justify-content: space-between;
+  display: flex;
+  width: 50%;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* nav ul li:hover{
+  transition: all 0.7s;
+  border: 1px solid white;
+  padding: 5px 25px;
+  border-radius: 6px;
+} */
+.outline {
+  border: 1px solid white;
+  padding: 5px 25px;
+  border-radius: 6px;
+
+}
+
+.logo-header {
+  font-size: 20px;
+  font-weight: bolder;
+  background: linear-gradient(90deg, rgba(160, 121, 255, 1) 0%, rgba(121, 128, 255, 1) 50%);
+  -webkit-background-clip: text;
+  font-size: 30px;
+  -webkit-text-fill-color: transparent;
+}
+
+.solid {
+  background: linear-gradient(90deg, rgba(160, 121, 255, 1) 0%, rgba(121, 128, 255, 1) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.far {
+  color: rgba(27, 31, 59, 0.5);
+}
+
+.logo-header span {
+  font-weight: 200;
+}
+
+.form-container {
+  margin-top: 7rem;
+}
+
+.form-container h1 {
+  color: #161a42;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.form-container .form-control {
+  margin-top: 30px;
+  width: 35%;
+}
+
+.icon-container i {
+  position: absolute;
+  top: 19px;
+  left: 19px;
+}
+
+.icon-container {
+  position: relative;
+  width: 48%;
+  font-size: 19px;
+}
+
+.form-container .form-control input {
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  border-radius: 6px;
+  width: 100%;
+  height: 56px;
+  padding: 14px 44px;
+  font-size: 19px;
+  color: rgba(27, 31, 59, 0.5);
+}
+
+.form-container button {
+  margin-top: 30px;
+  font-family: "Lato", sans-serif;
+  width: 35%;
+  height: 56px;
+  padding: 14px;
+  border-radius: 6px;
+  background: rgb(160, 121, 255);
+  background: linear-gradient(90deg, rgba(160, 121, 255, 1) 0%, rgba(121, 128, 255, 1) 50%);
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.flex-full-center {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
